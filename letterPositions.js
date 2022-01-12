@@ -13,7 +13,7 @@ const letterPositions = sentence => {
     }
   }
   return results;
-}
+};
 
 // Assertion
 const eqArrays = (actual, expected) => {
