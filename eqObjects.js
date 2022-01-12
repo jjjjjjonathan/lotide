@@ -7,6 +7,18 @@ const assertEqual = (actual, expected) => {
   }
 };
 
+const eqArrays = (firstArray, secondArray) => {
+  if (firstArray.length !== secondArray.length) {
+    return false;
+  } else {
+    for (let i = 0; i < firstArray.length; i++) {
+      if (firstArray[i] !== secondArray[i]) {
+        return false;
+      }
+    } return true;
+  }
+};
+
 // Function
 const eqObjects = (object1, object2) => {
   let keyArray1 = Object.keys(object1);
@@ -16,19 +28,15 @@ const eqObjects = (object1, object2) => {
   }
   // Loop through key array to compare values of same key
   for (let i of keyArray1) {
-    if (object1[i] !== object2[i]) {
-      return false;
+    if (Array.isArray(object1[i])) {
+      let eqArrayCheck = eqArrays(object1[i], object2[i]);
+      if (!eqArrayCheck) {
+        return false;
+      }
+    } else {
+      if (object1[i] !== object2[i]) {
+        return false;
+      }
     }
   } return true;
 };
-const a = {
-  a: "1",
-  c: 4,
-  b: 2
-}
-const b = {
-  a: "1",
-  b: 2,
-  c: 4
-}
-assertEqual(eqObjects(a, b), true)
