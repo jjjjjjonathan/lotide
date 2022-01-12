@@ -9,7 +9,7 @@ const assertEqual = (actual, expected) => {
 
 // Function
 const countLetters = sentence => {
-  let alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
+  const alphabet = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"];
   let results = {};
   // Remove spaces from string, and lower case everything since capitalized and uncapitalized letters are considered separate in the count
   let editedSentence = sentence.split(" ").join("").toLowerCase();
