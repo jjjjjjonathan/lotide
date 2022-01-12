@@ -1,9 +1,9 @@
-const eqArrays = (firstArray, secondArray) => {
-  if (firstArray.length !== secondArray.length) {
+const eqArrays = (actual, expected) => {
+  if (actual.length !== expected.length) {
     return false;
   } else {
-    for (let i = 0; i < firstArray.length; i++) {
-      if (firstArray[i] !== secondArray[i]) {
+    for (let i = 0; i < actual.length; i++) {
+      if (actual[i] !== expected[i]) {
         return false;
       }
     } return true;
