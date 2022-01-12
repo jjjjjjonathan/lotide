@@ -15,18 +15,20 @@ const eqObjects = (object1, object2) => {
     return false;
   }
   // Loop through key array to compare values of same key
-  for (let i = 0; i < keyArray1.length; i++) {
-    if (object1[keyArray1[i]] !== object2[keyArray1[i]]) {
+  for (let i of keyArray1) {
+    if (object1[i] !== object2[i]) {
       return false;
     }
   } return true;
 };
 const a = {
-  a: 1,
+  a: "1",
+  c: 4,
   b: 2
 }
 const b = {
-  a: 1,
-  b: 2
+  a: "1",
+  b: 2,
+  c: 4
 }
 assertEqual(eqObjects(a, b), true)
