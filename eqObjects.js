@@ -29,8 +29,7 @@ const eqObjects = (object1, object2) => {
   // Loop through key array to compare values of same key
   for (let i of keyArray1) {
     if (Array.isArray(object1[i])) {
-      let eqArrayCheck = eqArrays(object1[i], object2[i]);
-      if (!eqArrayCheck) {
+      if (!eqArrays(object1[i], object2[i])) {
         return false;
       }
     } else {
