@@ -19,17 +19,3 @@ const countOnly = (allItems, itemsToCount) => {
     }
   } return results;
 };
-
-/* countOnly function
-const countOnly = (allItems, itemsToCount) => {
-  let results = {};
-  for (let i = 0; i < allItems.length; i++) {
-    if (itemsToCount[allItems[i]] === true) {
-      if (results[allItems[i]] === undefined) {
-        results[allItems[i]] = 1;
-      } else {
-        results[allItems[i]] += 1;
-      }
-    }
-  } return results;
-}; */
