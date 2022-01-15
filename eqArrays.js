@@ -12,7 +12,11 @@ const eqArrays = (firstArray, secondArray) => {
     return false;
   } else {
     for (let i = 0; i < firstArray.length; i++) {
-      if (firstArray[i] !== secondArray[i]) {
+      if (Array.isArray(firstArray[i])) {
+        if (!eqArrays(firstArray[i], secondArray[i])) {
+          return false;
+        }
+      } else if (firstArray[i] !== secondArray[i]) {
         return false;
       }
     } return true;
