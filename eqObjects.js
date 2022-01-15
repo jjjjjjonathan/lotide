@@ -32,6 +32,10 @@ const eqObjects = (object1, object2) => {
       if (!eqArrays(object1[i], object2[i])) {
         return false;
       }
+    } else if (typeof object1[i] === 'object') {
+      if (!eqObjects(object1[i], object2[i])) {
+        return false;
+      }
     } else {
       if (object1[i] !== object2[i]) {
         return false;
