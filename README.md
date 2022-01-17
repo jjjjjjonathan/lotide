@@ -26,6 +26,6 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
+* `countLetters(sentence)`: function takes in a string, and outputs an object that lists how many times each letter was used (not case sensitive). Only unaccented letters will be counted and returned in the output.
 * `function2(...)`: description
 * `function3(...)`: description

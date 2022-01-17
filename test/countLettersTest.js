@@ -5,4 +5,7 @@ describe("#countLetters", () => {
   it('should return { j: 1, o: 1, n: 3, a: 2, t: 1, h: 2, c: 1, e: 1, g: 1 } for "Jonathan Cheng"', () => {
     assert.deepEqual(countLetters("Jonathan Cheng"), { j: 1, o: 1, n: 3, a: 2, t: 1, h: 2, c: 1, e: 1, g: 1 });
   });
+  it('should not return any numbers, symbols, spaces, or accented letters', () => {
+    assert.deepEqual(countLetters("é£ 4a"), {a: 1});
+  });
 });
