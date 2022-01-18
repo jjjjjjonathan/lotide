@@ -30,3 +30,4 @@ The following functions are currently implemented:
 * `countOnly(allItems, itemsToCount`: Takes in an array of strings, and an object with keys with the value of true. Outputs a results object containing how many times they were counted in the array. If values in `itemsToCount` are `false`, or they are entirely unlisted in the parameter, they will be ignored for counting purposes.
 * `findKey(object, callback)`: Takes in an object, and returns the first value that matches the callback and gives a truthy value. If a truthy value is never given, `undefined` is returned.
 * `findKeyByValue(object, key)`: Outputs a value which is linked with the value submitted in the object submitted.
+* `flatten(array)`: Takes in an array, and outputs a flattened array. Only works with one level of nesting.
