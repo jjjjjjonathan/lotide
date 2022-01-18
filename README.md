@@ -35,3 +35,4 @@ The following functions are currently implemented:
 * `letterPositions(string)`: Takes in a string, and outputs an object with keys of each letter used (not case sensitive), and the value for each key is an array containing the indexes of all the positions the letter appeared in the string. Only letters are counted, no spaces, symbols, or numbers.
 * `map(array, callback)`: Executes callback function on each item in the given array.
 * `middle(array)`: Returns an array containing only the middle index of the original array. If there is an even number of entries in the array, it will return the two middle entries.
+* `tail(array)`: Removes the first item in the array, and returns the rest.
