@@ -1,14 +1,7 @@
-// Assertopm
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}.`);
-  } else {
-    console.log(`⛔ Assertion Failed: ${actual} !== ${expected}.`);
-  }
-};
-
-const findKeyByValue = (objectToCheck, valueToFind) => {
+const findKeyByValue = (objectToCheck, keyToFind) => {
   let keyArray = Object.keys(objectToCheck)
   let valueArray = Object.values(objectToCheck);
-  return keyArray[valueArray.indexOf(valueToFind)];
+  return keyArray[valueArray.indexOf(keyToFind)];
 };
+
+module.exports = findKeyByValue;
