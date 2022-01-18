@@ -38,3 +38,8 @@ The following functions are currently implemented:
 * `tail(array)`: Removes the first item in the array, and returns the rest.
 * `takeUntil(array, callback)`: Returns items from the array, but only until the callback becomes false which will break the loop.
 * `without(source, itemsToRemove)`: Takes in an array of items, and an array of items you want to remove from the source array. Returns an array with the items removed.
+* `eqObjects(object1, object2)`: Checks if both objects submitted are identical or not. Returns true if identical, false if not. Can check for arrays within objects too.
+* `assertObjectsEqual(actual, expected)`: Assertion for the eqObjects function to test if it's working.
+* `eqArrays(array1, array2)`: Checks if both arrays submitted are identical or not. Returns true if identical, false if not.
+* `assertArraysEqual(actual, expected)`: Assertion for the eqArrays function to test if it's working.
+* `assertEqual(actual, expected)`: Assertion for primitive data types. Returns true if they're identical, false if not.
