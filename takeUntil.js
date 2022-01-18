@@ -8,3 +8,5 @@ const takeUntil = (array, callback) => {
     }
   } return finishedArray;
 };
+
+module.exports = takeUntil;

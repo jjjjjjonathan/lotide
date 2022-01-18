@@ -36,3 +36,4 @@ The following functions are currently implemented:
 * `map(array, callback)`: Executes callback function on each item in the given array.
 * `middle(array)`: Returns an array containing only the middle index of the original array. If there is an even number of entries in the array, it will return the two middle entries.
 * `tail(array)`: Removes the first item in the array, and returns the rest.
+* `takeUntil(array, callback)`: Returns items from the array, but only until the callback becomes false which will break the loop.
