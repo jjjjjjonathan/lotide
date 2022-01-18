@@ -33,3 +33,4 @@ The following functions are currently implemented:
 * `flatten(array)`: Takes in an array, and outputs a flattened array. Only works with one level of nesting.
 * `head(array)`: Takes in an array of items, and returns only the first item from index 0.
 * `letterPositions(string)`: Takes in a string, and outputs an object with keys of each letter used (not case sensitive), and the value for each key is an array containing the indexes of all the positions the letter appeared in the string. Only letters are counted, no spaces, symbols, or numbers.
+* `map(array, callback)`: Executes callback function on each item in the given array.
