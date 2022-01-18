@@ -3,5 +3,7 @@ const findKey = (object, callback) => {
     if (callback(object[property])) {
       return property;
     }
-  }
+  } return undefined;
 };
+
+module.exports = findKey;
