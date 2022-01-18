@@ -31,3 +31,4 @@ The following functions are currently implemented:
 * `findKey(object, callback)`: Takes in an object, and returns the first value that matches the callback and gives a truthy value. If a truthy value is never given, `undefined` is returned.
 * `findKeyByValue(object, key)`: Outputs a value which is linked with the value submitted in the object submitted.
 * `flatten(array)`: Takes in an array, and outputs a flattened array. Only works with one level of nesting.
+* `head(array)`: Takes in an array of items, and returns only the first item from index 0.
